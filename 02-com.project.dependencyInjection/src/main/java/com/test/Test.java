@@ -4,14 +4,11 @@ import com.client.Client;
 
 public class Test {
 
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
+		Client client = new Client();
+		client.clientRequest("civic");
+		client.clientRequest("corolla");
 
-
-
-        Client client=new Client();
-        client.clientRequest("civic");
-        client.clientRequest("corolla");
-
-    }
+	}
 }
