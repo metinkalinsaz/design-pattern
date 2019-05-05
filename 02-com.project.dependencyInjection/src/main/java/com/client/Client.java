@@ -5,11 +5,10 @@ import com.otostore.Car;
 
 public class Client {
 
-    public  void  clientRequest(String carType){
+	public void clientRequest(String carType) {
 
+		Car car = new CarFactory().carCreator(carType);
+		car.brake();
 
-        Car car=new CarFactory().carCreator(carType);
-        car.brake();
-
-    }
+	}
 }
